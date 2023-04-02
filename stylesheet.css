@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.grid-1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.grid-2{
+    margin-top: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    border: solid 1px black;
+    padding: 2rem;
+    text-align: center;
+}
+
+th{
+    background-color: #b0b4b5;
+}
+
+td{
+    background-color: aliceblue;
+}
+
+#DeleteButton {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+table #details {
+    counter-reset: rowNumber;
+}
+
+table #details tr:nth-child(n+1) {
+    counter-increment: rowNumber;
+}
+
+table #details tr:nth-child(n+1) td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+.label {
+    font-size: 1rem;
+}
+
+#first {
+    padding: 6px;
+    height: 2rem;
+    width: 5rem;
+}
+
+#last {
+    padding: 6px;
+    height: 2rem;
+    width: 8rem;
+}
+
+.name {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#contact {
+    padding: 6px;
+    height: 2rem;
+    width: 13.313rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+#save {
+    width: 13.312rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    background-color: #52ed52;
+    border: solid 1px black;
+}
+
+#search{
+    width: 40rem;
+    margin-left: -1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 17px;
+    height: 1.7rem;
+    padding: 14px;
+    border: solid 1px black;
+}
+
+#name{
+    cursor: pointer;
+}

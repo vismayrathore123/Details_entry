@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Details Entry</title>
+</head>
+
+<body>
+    <section class="grid-1">
+        <div class="inputs">
+            <h1 class="label">Person's Name</h1>
+            <input class="name" type="text" id="first" placeholder="First">
+            <input class="name" type="text" id="last" placeholder="Last">
+            <h1 class="label">Contact Number</h1>
+            <input type="text" id="contact">
+            <button type="button" id="save">Save</button>
+        </div>
+    </section>
+
+    <section class="grid-2">
+        <div>
+            <input type="text" id="search" placeholder ="Search">
+        </div>
+        <div class="output">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SN.</th>
+                        <th id="name">Name</th>
+                        <th>Contact</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="details">
+                    <!-- Person Details inserted from jQuery -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</html>
